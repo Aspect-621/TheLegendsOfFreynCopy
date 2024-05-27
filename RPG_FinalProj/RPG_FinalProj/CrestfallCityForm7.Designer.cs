@@ -85,10 +85,12 @@
             // 
             // Player
             // 
-            Player.BackColor = SystemColors.ActiveCaption;
+            Player.BackColor = Color.Transparent;
+            Player.Image = (Image)resources.GetObject("Player.Image");
             Player.Location = new Point(165, 511);
             Player.Name = "Player";
-            Player.Size = new Size(35, 35);
+            Player.Size = new Size(50, 50);
+            Player.SizeMode = PictureBoxSizeMode.StretchImage;
             Player.TabIndex = 3;
             Player.TabStop = false;
             // 
